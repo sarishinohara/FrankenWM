@@ -56,8 +56,11 @@ static const AppRule rules[] = { \
     { "Mousepad",   -1,      False,  True, -1 },
     { "termite",    -1,      False,  True, -1 },
     { "Thunar",     -1,      False,  True, -1 },
-    { "firefox",     -1,      False,  True, -1 },
-    { "mpv",     -1,      False,  True, -1 },
+    { "firefox",    -1,      False,  True, -1 },
+    { "mpv",        -1,      False,  True, -1 },
+    { "feh",        -1,      False,  True, -1 },
+    { "sxiv",       -1,      False,  True, -1 },
+    { "pamac-manager",        -1,      False,  True, -1 },
 };
 
 /* helper for spawning shell commands, usually you don't edit this */
