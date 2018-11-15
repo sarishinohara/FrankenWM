@@ -83,6 +83,10 @@ static const char *sakura[] = { "sakura",     NULL };
 static const char *rofi[] = { "rofir",     NULL };
 static const char *draw[] = { "draw",     NULL };
 static const char *lock[] = { "i3lock-next",     NULL };
+static const char *volup[] = { "volup",     NULL };
+static const char *voldown[] = { "voldown",     NULL };
+static const char *brightup[] = { "brightup",     NULL };
+static const char *brightdown[] = { "brightdown",     NULL };
 /* static const char *scrpcmd[] = { "urxvt", "-name", "scratchpad",  NULL }; */
 
 #define DESKTOPCHANGE(K,N) \
@@ -157,6 +161,11 @@ static key keys[] = {
     {  MOD4,             XK_z,          spawn,             {.com = rofi}},
     {  MOD4,             XK_x,          spawn,             {.com = draw}},
     {  MOD4,             XK_ccedilla,   spawn,             {.com = lock}},
+    /* brightness and volume */
+    {  MOD4,             XK_F12,        spawn,             {.com = volup}},
+    {  MOD4,             XK_F11,        spawn,             {.com = voldown}},
+    {  MOD4,             XK_F10,        spawn,             {.com = brightup}},
+    {  MOD4,             XK_F9,         spawn,             {.com = brightdown}},
     /* kill current window */
     {  MOD4|SHIFT,       XK_q,          killclient,        {NULL}},
 
