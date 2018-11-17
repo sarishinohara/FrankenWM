@@ -22,8 +22,8 @@
 #define BORDER_WIDTH    0         /* window border width */
 #define SCRATCH_WIDTH   1         /* scratch window border width, 0 to disable */
 #define FOCUS           "#ffffff" /* focused window border color   */
-#define UNFOCUS         "#071d22" /* unfocused window border color */
-#define SCRATCH         "#cc0000" /* scratchpad border color */
+#define UNFOCUS         "#1d383e" /* unfocused window border color */
+#define SCRATCH         "#1d383e" /* scratchpad border color */
 #define DESKTOPS        8         /* number of desktops - edit DESKTOPCHANGE keys to suit */
 #define DEFAULT_DESKTOP 0         /* the desktop to focus on exec */
 #define MINWSZ          50        /* minimum window size in pixels */
