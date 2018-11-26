@@ -13,7 +13,7 @@
 #define MASTER_SIZE     0.6       /* master-stack ratio */
 #define SHOW_PANEL      False     /* show panel by default on exec */
 #define TOP_PANEL       True      /* False means panel is on bottom */
-#define PANEL_HEIGHT    18        /* 0 for no space for panel, thus no panel */
+#define PANEL_HEIGHT    0         /* 0 for no space for panel, thus no panel */
 #define DEFAULT_MODE    TILE      /* TILE MONOCLE BSTACK GRID FIBONACCI EQUAL */
 #define ATTACH_ASIDE    True      /* False means new window is master */
 #define FOLLOW_MOUSE    False     /* Focus the window the mouse just entered */
@@ -49,8 +49,8 @@
  */
 static const AppRule rules[] = { \
     /* title regex  desktop  follow  float border_with */
-    { "GNU Image",  -1,      False,  True,  0 },
-    { "Skype",       3,      False,  True, -1 },
+    { "GNU Image",  -1,      False,  True, -1 },
+    { "Skype",      -1,      False,  True, -1 },
     { "sakura",     -1,      True,   True, -1 },
     { "urxvt",      -1,      False,  True, -1 },
     { "Mousepad",   -1,      False,  True, -1 },
@@ -103,8 +103,8 @@ static key keys[] = {
     /* modifier          key            function           argument */
 
     /* select windows */
-    {  MOD4,             XK_h,          next_win,          {NULL}},
-    {  MOD4,             XK_l,          prev_win,          {NULL}},
+    {  MOD1,             XK_Tab,        next_win,          {NULL}},
+    {  MOD1|SHIFT,       XK_Tab,        prev_win,          {NULL}},
     /* select the master window, or the previously focussed slave */
     {  MOD4,             XK_w,          focusmaster,       {NULL}},
     /* select urgent window */
