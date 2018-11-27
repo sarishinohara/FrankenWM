@@ -31,7 +31,7 @@
 #define GLOBALGAPS      False     /* use the same gap size on all desktops */
 #define MONOCLE_BORDERS False     /* display borders in monocle mode */
 #define INVERT          False     /* use alternative modes by default */
-#define AUTOCENTER      True      /* automatically center windows floating by default */
+#define AUTOCENTER      False     /* automatically center windows floating by default */
 #define OUTPUT_TITLE    True      /* output the title of the currently active window */
 #define USE_SCRATCHPAD  False     /* enable the scratchpad functionality */
 #define CLOSE_SCRATCHPAD True     /* close scratchpad on quit */
